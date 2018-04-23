@@ -13,7 +13,36 @@
 		271443C3208A1A940010F4E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271443C2208A1A940010F4E5 /* Assets.xcassets */; };
 		271443C6208A1A940010F4E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271443C4208A1A940010F4E5 /* LaunchScreen.storyboard */; };
 		271443C9208A1A940010F4E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 271443C8208A1A940010F4E5 /* main.m */; };
+		2797715A208A1DB600B56F3C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27977159208A1DB600B56F3C /* UserNotifications.framework */; };
+		2797715C208A1DB600B56F3C /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2797715B208A1DB600B56F3C /* UserNotificationsUI.framework */; };
+		27977160208A1DB600B56F3C /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2797715F208A1DB600B56F3C /* NotificationViewController.m */; };
+		27977163208A1DB600B56F3C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27977161208A1DB600B56F3C /* MainInterface.storyboard */; };
+		27977167208A1DB600B56F3C /* XCBotTestExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27977157208A1DB600B56F3C /* XCBotTestExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27977165208A1DB600B56F3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271443AE208A1A930010F4E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27977156208A1DB600B56F3C;
+			remoteInfo = XCBotTestExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2797716B208A1DB600B56F3C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				27977167208A1DB600B56F3C /* XCBotTestExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		271443B6208A1A930010F4E5 /* XCBotsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCBotsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +55,13 @@
 		271443C5208A1A940010F4E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		271443C7208A1A940010F4E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		271443C8208A1A940010F4E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27977157208A1DB600B56F3C /* XCBotTestExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XCBotTestExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		27977159208A1DB600B56F3C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		2797715B208A1DB600B56F3C /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		2797715E208A1DB600B56F3C /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		2797715F208A1DB600B56F3C /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		27977162208A1DB600B56F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		27977164208A1DB600B56F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +72,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27977154208A1DB600B56F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2797715C208A1DB600B56F3C /* UserNotificationsUI.framework in Frameworks */,
+				2797715A208A1DB600B56F3C /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				271443B8208A1A930010F4E5 /* XCBotsTest */,
+				2797715D208A1DB600B56F3C /* XCBotTestExt */,
+				27977158208A1DB600B56F3C /* Frameworks */,
 				271443B7208A1A930010F4E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				271443B6208A1A930010F4E5 /* XCBotsTest.app */,
+				27977157208A1DB600B56F3C /* XCBotTestExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +119,26 @@
 			path = XCBotsTest;
 			sourceTree = "<group>";
 		};
+		27977158208A1DB600B56F3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27977159208A1DB600B56F3C /* UserNotifications.framework */,
+				2797715B208A1DB600B56F3C /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2797715D208A1DB600B56F3C /* XCBotTestExt */ = {
+			isa = PBXGroup;
+			children = (
+				2797715E208A1DB600B56F3C /* NotificationViewController.h */,
+				2797715F208A1DB600B56F3C /* NotificationViewController.m */,
+				27977161208A1DB600B56F3C /* MainInterface.storyboard */,
+				27977164208A1DB600B56F3C /* Info.plist */,
+			);
+			path = XCBotTestExt;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,15 +149,34 @@
 				271443B2208A1A930010F4E5 /* Sources */,
 				271443B3208A1A930010F4E5 /* Frameworks */,
 				271443B4208A1A930010F4E5 /* Resources */,
+				2797716B208A1DB600B56F3C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				27977166208A1DB600B56F3C /* PBXTargetDependency */,
 			);
 			name = XCBotsTest;
 			productName = XCBotsTest;
 			productReference = 271443B6208A1A930010F4E5 /* XCBotsTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		27977156208A1DB600B56F3C /* XCBotTestExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2797716A208A1DB600B56F3C /* Build configuration list for PBXNativeTarget "XCBotTestExt" */;
+			buildPhases = (
+				27977153208A1DB600B56F3C /* Sources */,
+				27977154208A1DB600B56F3C /* Frameworks */,
+				27977155208A1DB600B56F3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCBotTestExt;
+			productName = XCBotTestExt;
+			productReference = 27977157208A1DB600B56F3C /* XCBotTestExt.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +188,9 @@
 				ORGANIZATIONNAME = "Eugene Zhuk";
 				TargetAttributes = {
 					271443B5208A1A930010F4E5 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					27977156208A1DB600B56F3C = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -119,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				271443B5208A1A930010F4E5 /* XCBotsTest */,
+				27977156208A1DB600B56F3C /* XCBotTestExt */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +222,14 @@
 				271443C6208A1A940010F4E5 /* LaunchScreen.storyboard in Resources */,
 				271443C3208A1A940010F4E5 /* Assets.xcassets in Resources */,
 				271443C1208A1A930010F4E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27977155208A1DB600B56F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27977163208A1DB600B56F3C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +246,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27977153208A1DB600B56F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27977160208A1DB600B56F3C /* NotificationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27977166208A1DB600B56F3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27977156208A1DB600B56F3C /* XCBotTestExt */;
+			targetProxy = 27977165208A1DB600B56F3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		271443BF208A1A930010F4E5 /* Main.storyboard */ = {
@@ -164,6 +279,14 @@
 				271443C5208A1A940010F4E5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		27977161208A1DB600B56F3C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27977162208A1DB600B56F3C /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -285,6 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 934M326ENJ;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = XCBotsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 934M326ENJ;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = XCBotsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +434,42 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = asd.XCBotsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27977168208A1DB600B56F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 934M326ENJ;
+				INFOPLIST_FILE = XCBotTestExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asd.XCBotsTest.XCBotTestExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27977169208A1DB600B56F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 934M326ENJ;
+				INFOPLIST_FILE = XCBotTestExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asd.XCBotsTest.XCBotTestExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -330,6 +491,15 @@
 			buildConfigurations = (
 				271443CD208A1A940010F4E5 /* Debug */,
 				271443CE208A1A940010F4E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2797716A208A1DB600B56F3C /* Build configuration list for PBXNativeTarget "XCBotTestExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27977168208A1DB600B56F3C /* Debug */,
+				27977169208A1DB600B56F3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
